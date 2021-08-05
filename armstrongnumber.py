@@ -1,4 +1,9 @@
-num = input("Enter a integer number: ")
+    while True:
+    num = input("Enter a integer number: ")
+    if not num.isdigit():
+        print("Please enter an positive integer number !!!")
+    else:
+        break
 
 num_int = int(num)
 digit = str(num)
@@ -9,7 +14,5 @@ for i in digit:
     sum += power
 if (num_int == sum):
     print(f"{num_int} is a Armstrong number.")
-elif not num.isdigit():
-    print("Please enter an positive integer number !!!")
 else:
     print(f"{num_int} is NOT a Armstrong number.")
