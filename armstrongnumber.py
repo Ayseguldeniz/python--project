@@ -1,4 +1,4 @@
-    while True:
+while True:
     num = input("Enter a integer number: ")
     if not num.isdigit():
         print("Please enter an positive integer number !!!")
